@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usingtags:blocks/tagchecker",
+    "up": "usingtags:blocks/tagchecker",
+    "north": "usingtags:blocks/tagchecker",
+    "east": "usingtags:blocks/tagchecker",
+    "south": "usingtags:blocks/tagchecker",
+    "west": "usingtags:blocks/tagchecker",
+    "particle": "usingtags:blocks/tagchecker"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "usingtags:block/place_and_check"
+    }
+  }
+}

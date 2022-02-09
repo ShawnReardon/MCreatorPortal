@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "crop": "stage_1"
+      },
+      "name": "default"
+    }
+  }
+}

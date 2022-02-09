@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usingtags:blocks/atrap",
+    "up": "usingtags:blocks/atrap",
+    "north": "usingtags:blocks/atrap",
+    "east": "usingtags:blocks/atrap",
+    "south": "usingtags:blocks/atrap",
+    "west": "usingtags:blocks/atrap",
+    "particle": "usingtags:blocks/atrap"
+  }
+}

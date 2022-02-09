@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usingtags:blocks/port2",
+    "up": "usingtags:blocks/port2",
+    "north": "usingtags:blocks/port2",
+    "east": "usingtags:blocks/port2",
+    "south": "usingtags:blocks/port2",
+    "west": "usingtags:blocks/port2",
+    "particle": "usingtags:blocks/port2"
+  }
+}

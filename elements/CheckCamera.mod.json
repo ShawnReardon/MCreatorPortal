@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "U",
+    "keyBindingName": "Check Camera",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "CheckCameraOnKeyPressed"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usingtags:blocks/breaking",
+    "up": "usingtags:blocks/breaking",
+    "north": "usingtags:blocks/breaking",
+    "east": "usingtags:blocks/breaking",
+    "south": "usingtags:blocks/breaking",
+    "west": "usingtags:blocks/breaking",
+    "particle": "usingtags:blocks/breaking"
+  }
+}
