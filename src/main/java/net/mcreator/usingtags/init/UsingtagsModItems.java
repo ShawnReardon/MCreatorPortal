@@ -18,6 +18,7 @@ import net.mcreator.usingtags.item.PowerUpSwordItem;
 import net.mcreator.usingtags.item.PortalPlacerItem;
 import net.mcreator.usingtags.item.PocketBridgeItem;
 import net.mcreator.usingtags.item.CropSeedsItem;
+import net.mcreator.usingtags.item.BigHammerItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class UsingtagsModItems {
 	public static final Item PORTAL_PLACER = register(new PortalPlacerItem());
 	public static final Item PORTAL_2 = register(UsingtagsModBlocks.PORTAL_2, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item CAMERA_BLOCK = register(UsingtagsModBlocks.CAMERA_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item BIG_HAMMER = register(new BigHammerItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

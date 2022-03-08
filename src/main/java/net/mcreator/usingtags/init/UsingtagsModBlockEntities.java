@@ -13,6 +13,8 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.usingtags.block.entity.Stage1BlockEntity;
 import net.mcreator.usingtags.block.entity.Stage0BlockEntity;
+import net.mcreator.usingtags.block.entity.Portal2BlockEntity;
+import net.mcreator.usingtags.block.entity.Portal1BlockEntity;
 import net.mcreator.usingtags.block.entity.PlaceAndCheckBlockEntity;
 import net.mcreator.usingtags.block.entity.ItsATrapBlockEntity;
 import net.mcreator.usingtags.block.entity.BreakingBlockBlockEntity;
@@ -30,6 +32,8 @@ public class UsingtagsModBlockEntities {
 	public static final BlockEntityType<?> ITS_A_TRAP = register("usingtags:its_a_trap", UsingtagsModBlocks.ITS_A_TRAP, ItsATrapBlockEntity::new);
 	public static final BlockEntityType<?> STAGE_0 = register("usingtags:stage_0", UsingtagsModBlocks.STAGE_0, Stage0BlockEntity::new);
 	public static final BlockEntityType<?> STAGE_1 = register("usingtags:stage_1", UsingtagsModBlocks.STAGE_1, Stage1BlockEntity::new);
+	public static final BlockEntityType<?> PORTAL_1 = register("usingtags:portal_1", UsingtagsModBlocks.PORTAL_1, Portal1BlockEntity::new);
+	public static final BlockEntityType<?> PORTAL_2 = register("usingtags:portal_2", UsingtagsModBlocks.PORTAL_2, Portal2BlockEntity::new);
 
 	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);

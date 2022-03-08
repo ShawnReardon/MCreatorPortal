@@ -95,6 +95,8 @@ public class UsingtagsModVariables {
 			clone.camop_x = original.camop_x;
 			clone.camop_y = original.camop_y;
 			clone.camop_z = original.camop_z;
+			clone.portalDebounce = original.portalDebounce;
+			clone.glb_portal_clock = original.glb_portal_clock;
 			if (!event.isWasDeath()) {
 				clone.globalPWR = original.globalPWR;
 			}
@@ -282,6 +284,8 @@ public class UsingtagsModVariables {
 		public double camop_x = 0;
 		public double camop_y = 0;
 		public double camop_z = 0;
+		public boolean portalDebounce = false;
+		public double glb_portal_clock = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -307,6 +311,8 @@ public class UsingtagsModVariables {
 			nbt.putDouble("camop_x", camop_x);
 			nbt.putDouble("camop_y", camop_y);
 			nbt.putDouble("camop_z", camop_z);
+			nbt.putBoolean("portalDebounce", portalDebounce);
+			nbt.putDouble("glb_portal_clock", glb_portal_clock);
 			return nbt;
 		}
 
@@ -329,6 +335,8 @@ public class UsingtagsModVariables {
 			camop_x = nbt.getDouble("camop_x");
 			camop_y = nbt.getDouble("camop_y");
 			camop_z = nbt.getDouble("camop_z");
+			portalDebounce = nbt.getBoolean("portalDebounce");
+			glb_portal_clock = nbt.getDouble("glb_portal_clock");
 		}
 	}
 
@@ -371,6 +379,8 @@ public class UsingtagsModVariables {
 					variables.camop_x = message.data.camop_x;
 					variables.camop_y = message.data.camop_y;
 					variables.camop_z = message.data.camop_z;
+					variables.portalDebounce = message.data.portalDebounce;
+					variables.glb_portal_clock = message.data.glb_portal_clock;
 				}
 			});
 			context.setPacketHandled(true);
