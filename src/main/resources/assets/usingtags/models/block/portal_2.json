@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "usingtags:blocks/port2",
-    "up": "usingtags:blocks/port2",
-    "north": "usingtags:blocks/port2",
-    "east": "usingtags:blocks/port2",
-    "south": "usingtags:blocks/port2",
-    "west": "usingtags:blocks/port2",
-    "particle": "usingtags:blocks/port2"
+    "down": "usingtags:blocks/portalorange",
+    "up": "usingtags:blocks/portalorange",
+    "north": "usingtags:blocks/portalorange",
+    "east": "usingtags:blocks/portalorange",
+    "south": "usingtags:blocks/portalorange",
+    "west": "usingtags:blocks/portalorange",
+    "particle": "usingtags:blocks/portalorange"
   }
 }

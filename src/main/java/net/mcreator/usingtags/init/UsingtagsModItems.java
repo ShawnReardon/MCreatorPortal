@@ -42,6 +42,9 @@ public class UsingtagsModItems {
 	public static final Item PORTAL_2 = register(UsingtagsModBlocks.PORTAL_2, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item CAMERA_BLOCK = register(UsingtagsModBlocks.CAMERA_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item BIG_HAMMER = register(new BigHammerItem());
+	public static final Item ZOMBIE_MOB_MOB = register(
+			new SpawnEggItem(UsingtagsModEntities.ZOMBIE_MOB_MOB, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("zombie_mob_mob_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

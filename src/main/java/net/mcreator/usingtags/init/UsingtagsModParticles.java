@@ -16,6 +16,7 @@ import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.usingtags.client.particle.ShurikenParticle;
 import net.mcreator.usingtags.client.particle.PowerParticleParticle;
 
 import java.util.function.Function;
@@ -27,6 +28,7 @@ public class UsingtagsModParticles {
 	private static final Map<ParticleType<?>, Function<SpriteSet, ParticleProvider<SimpleParticleType>>> REGISTRY = new HashMap<>();
 	public static final SimpleParticleType POWER_PARTICLE = register(new SimpleParticleType(false).setRegistryName("power_particle"),
 			PowerParticleParticle::provider);
+	public static final SimpleParticleType SHURIKEN = register(new SimpleParticleType(false).setRegistryName("shuriken"), ShurikenParticle::provider);
 
 	private static SimpleParticleType register(ParticleType<?> particle, Function<SpriteSet, ParticleProvider<SimpleParticleType>> provider) {
 		REGISTRY.put(particle, provider);

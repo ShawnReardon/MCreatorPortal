@@ -14,6 +14,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.usingtags.entity.ZombieMobMobEntity;
 import net.mcreator.usingtags.entity.IMaMobEntity;
 
 import java.util.List;
@@ -25,6 +26,9 @@ public class UsingtagsModEntities {
 	public static final EntityType<IMaMobEntity> I_MA_MOB = register("i_ma_mob",
 			EntityType.Builder.<IMaMobEntity>of(IMaMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(IMaMobEntity::new).sized(0.4f, 0.3f));
+	public static final EntityType<ZombieMobMobEntity> ZOMBIE_MOB_MOB = register("zombie_mob_mob",
+			EntityType.Builder.<ZombieMobMobEntity>of(ZombieMobMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZombieMobMobEntity::new).sized(0.6f, 1.8f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -41,11 +45,13 @@ public class UsingtagsModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			IMaMobEntity.init();
+			ZombieMobMobEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(I_MA_MOB, IMaMobEntity.createAttributes().build());
+		event.put(ZOMBIE_MOB_MOB, ZombieMobMobEntity.createAttributes().build());
 	}
 }
