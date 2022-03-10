@@ -97,6 +97,7 @@ public class UsingtagsModVariables {
 			clone.camop_z = original.camop_z;
 			clone.portalDebounce = original.portalDebounce;
 			clone.glb_portal_clock = original.glb_portal_clock;
+			clone.isDefenderSpawned = original.isDefenderSpawned;
 			if (!event.isWasDeath()) {
 				clone.globalPWR = original.globalPWR;
 			}
@@ -286,6 +287,7 @@ public class UsingtagsModVariables {
 		public double camop_z = 0;
 		public boolean portalDebounce = false;
 		public double glb_portal_clock = 0;
+		public boolean isDefenderSpawned = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -313,6 +315,7 @@ public class UsingtagsModVariables {
 			nbt.putDouble("camop_z", camop_z);
 			nbt.putBoolean("portalDebounce", portalDebounce);
 			nbt.putDouble("glb_portal_clock", glb_portal_clock);
+			nbt.putBoolean("isDefenderSpawned", isDefenderSpawned);
 			return nbt;
 		}
 
@@ -337,6 +340,7 @@ public class UsingtagsModVariables {
 			camop_z = nbt.getDouble("camop_z");
 			portalDebounce = nbt.getBoolean("portalDebounce");
 			glb_portal_clock = nbt.getDouble("glb_portal_clock");
+			isDefenderSpawned = nbt.getBoolean("isDefenderSpawned");
 		}
 	}
 
@@ -381,6 +385,7 @@ public class UsingtagsModVariables {
 					variables.camop_z = message.data.camop_z;
 					variables.portalDebounce = message.data.portalDebounce;
 					variables.glb_portal_clock = message.data.glb_portal_clock;
+					variables.isDefenderSpawned = message.data.isDefenderSpawned;
 				}
 			});
 			context.setPacketHandled(true);
