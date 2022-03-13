@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.usingtags.block.Stage1Block;
 import net.mcreator.usingtags.block.Stage0Block;
+import net.mcreator.usingtags.block.RainbowPartyBlock;
 import net.mcreator.usingtags.block.Portal2Block;
 import net.mcreator.usingtags.block.Portal1Block;
 import net.mcreator.usingtags.block.PlaceAndCheckBlock;
@@ -35,6 +36,7 @@ public class UsingtagsModBlocks {
 	public static final Block PORTAL_1 = register(new Portal1Block());
 	public static final Block PORTAL_2 = register(new Portal2Block());
 	public static final Block CAMERA_BLOCK = register(new CameraBlockBlock());
+	public static final Block RAINBOW_PARTY = register(new RainbowPartyBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

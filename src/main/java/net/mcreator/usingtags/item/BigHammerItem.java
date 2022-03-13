@@ -8,11 +8,14 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.usingtags.procedures.BigHammerToolInHandTickProcedure;
-import net.mcreator.usingtags.procedures.BigHammerEntitySwingsItemProcedure;
+import net.mcreator.usingtags.procedures.BigHammerMakeItemGlowProcedure;
+import net.mcreator.usingtags.procedures.BigHammerEntitySwingsItem2Procedure;
 
 public class BigHammerItem extends PickaxeItem {
 	public BigHammerItem() {
@@ -47,7 +50,7 @@ public class BigHammerItem extends PickaxeItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		BigHammerEntitySwingsItemProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		BigHammerEntitySwingsItem2Procedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 
@@ -55,6 +58,16 @@ public class BigHammerItem extends PickaxeItem {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			BigHammerToolInHandTickProcedure.execute(world, entity);
+			BigHammerToolInHandTickProcedure.execute(entity);
+	}
+
+	@Override
+	public boolean isFoil(ItemStack itemstack) {
+		Player entity = Minecraft.getInstance().player;
+		Level world = entity.level;
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return BigHammerMakeItemGlowProcedure.execute(world);
 	}
 }

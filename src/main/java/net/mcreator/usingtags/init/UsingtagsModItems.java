@@ -45,6 +45,7 @@ public class UsingtagsModItems {
 	public static final Item ZOMBIE_MOB_MOB = register(
 			new SpawnEggItem(UsingtagsModEntities.ZOMBIE_MOB_MOB, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("zombie_mob_mob_spawn_egg"));
+	public static final Item RAINBOW_PARTY = register(UsingtagsModBlocks.RAINBOW_PARTY, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

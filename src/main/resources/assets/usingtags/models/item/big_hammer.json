@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "usingtags:items/bighammer"
+    "layer0": "usingtags:items/powerpick"
   }
 }

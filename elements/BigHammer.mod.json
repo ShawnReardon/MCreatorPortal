@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "bighammer",
+    "texture": "powerpick",
     "customModelName": "Normal",
     "name": "Big Hammer",
     "specialInfo": [],
@@ -18,7 +18,10 @@
     "damageVsEntity": 4.0,
     "usageCount": 500,
     "blocksAffected": [],
-    "hasGlow": false,
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "BigHammerMakeItemGlow"
+    },
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
@@ -27,7 +30,7 @@
       "name": "BigHammerToolInHandTick"
     },
     "onEntitySwing": {
-      "name": "BigHammerEntitySwingsItem"
+      "name": "BigHammerEntitySwingsItem2"
     }
   }
 }

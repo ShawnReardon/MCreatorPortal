@@ -911,10 +911,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -1095,6 +1091,91 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "weapons"
+    },
+    {
+      "name": "RainbowPartyBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbow_party_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RainbowParty",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbow_party"
+    },
+    {
+      "name": "BigHammerEntitySwingsItem2",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_hammer_entity_swings_item_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BigHammerMakeItemGlow",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_hammer_make_item_glow",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1236,6 +1317,7 @@
       "item.usingtags.crop_seeds": "Crop Seeds",
       "block.usingtags.stage_0": "Stage 0",
       "block.usingtags.place_and_check": "Place And Check",
+      "block.usingtags.rainbow_party": "Rainbow Party",
       "key.usingtags.portal_blue": "Portal Blue",
       "item.usingtags.power_up_sword": "Power Up Sword",
       "entity.usingtags.i_ma_mob": "I Ma Mob",

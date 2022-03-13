@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usingtags:blocks/download",
+    "up": "usingtags:blocks/download",
+    "north": "usingtags:blocks/download",
+    "east": "usingtags:blocks/download",
+    "south": "usingtags:blocks/download",
+    "west": "usingtags:blocks/download",
+    "particle": "usingtags:blocks/download"
+  }
+}
