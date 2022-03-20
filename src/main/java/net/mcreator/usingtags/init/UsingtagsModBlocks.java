@@ -18,6 +18,7 @@ import net.mcreator.usingtags.block.RainbowPartyBlock;
 import net.mcreator.usingtags.block.Portal2Block;
 import net.mcreator.usingtags.block.Portal1Block;
 import net.mcreator.usingtags.block.PlaceAndCheckBlock;
+import net.mcreator.usingtags.block.PieDayBlockBlock;
 import net.mcreator.usingtags.block.ItsATrapBlock;
 import net.mcreator.usingtags.block.CameraBlockBlock;
 import net.mcreator.usingtags.block.BreakingBlockBlock;
@@ -37,6 +38,7 @@ public class UsingtagsModBlocks {
 	public static final Block PORTAL_2 = register(new Portal2Block());
 	public static final Block CAMERA_BLOCK = register(new CameraBlockBlock());
 	public static final Block RAINBOW_PARTY = register(new RainbowPartyBlock());
+	public static final Block PIE_DAY_BLOCK = register(new PieDayBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -58,6 +60,7 @@ public class UsingtagsModBlocks {
 			Portal1Block.registerRenderLayer();
 			Portal2Block.registerRenderLayer();
 			CameraBlockBlock.registerRenderLayer();
+			PieDayBlockBlock.registerRenderLayer();
 		}
 	}
 }

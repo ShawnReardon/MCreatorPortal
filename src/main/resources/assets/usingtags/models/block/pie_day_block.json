@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "usingtags:blocks/pie",
+    "particle": "usingtags:blocks/piedaypart"
+  }
+}

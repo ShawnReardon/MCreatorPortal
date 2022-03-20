@@ -15,6 +15,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.usingtags.entity.ZombieMobMobEntity;
+import net.mcreator.usingtags.entity.LightiningStormEntity;
 import net.mcreator.usingtags.entity.IMaMobEntity;
 
 import java.util.List;
@@ -29,6 +30,10 @@ public class UsingtagsModEntities {
 	public static final EntityType<ZombieMobMobEntity> ZOMBIE_MOB_MOB = register("zombie_mob_mob",
 			EntityType.Builder.<ZombieMobMobEntity>of(ZombieMobMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZombieMobMobEntity::new).sized(0.6f, 1.8f));
+	public static final EntityType<LightiningStormEntity> LIGHTINING_STORM = register("entitybulletlightining_storm",
+			EntityType.Builder.<LightiningStormEntity>of(LightiningStormEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(LightiningStormEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);

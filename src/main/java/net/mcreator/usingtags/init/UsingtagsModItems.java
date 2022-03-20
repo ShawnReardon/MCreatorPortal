@@ -17,6 +17,8 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.usingtags.item.PowerUpSwordItem;
 import net.mcreator.usingtags.item.PortalPlacerItem;
 import net.mcreator.usingtags.item.PocketBridgeItem;
+import net.mcreator.usingtags.item.PieDayFoodItem;
+import net.mcreator.usingtags.item.LightiningStormItem;
 import net.mcreator.usingtags.item.CropSeedsItem;
 import net.mcreator.usingtags.item.BigHammerItem;
 
@@ -46,6 +48,9 @@ public class UsingtagsModItems {
 			new SpawnEggItem(UsingtagsModEntities.ZOMBIE_MOB_MOB, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("zombie_mob_mob_spawn_egg"));
 	public static final Item RAINBOW_PARTY = register(UsingtagsModBlocks.RAINBOW_PARTY, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item PIE_DAY_BLOCK = register(UsingtagsModBlocks.PIE_DAY_BLOCK, CreativeModeTab.TAB_MISC);
+	public static final Item PIE_DAY_FOOD = register(new PieDayFoodItem());
+	public static final Item LIGHTINING_STORM = register(new LightiningStormItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

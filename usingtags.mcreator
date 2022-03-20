@@ -1176,6 +1176,162 @@
           }
         ]
       }
+    },
+    {
+      "name": "RanibowPlacedBy",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ranibow_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PieDayBlock",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pie_day_block"
+    },
+    {
+      "name": "PieDayFood",
+      "type": "food",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pie_day_food"
+    },
+    {
+      "name": "FillWithPie",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fill_with_pie",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PieDayParticle",
+      "type": "particle",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pie_day_particle"
+    },
+    {
+      "name": "MyFillCommandExecuted",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_fill_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MyFill",
+      "type": "command",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_fill"
+    },
+    {
+      "name": "LightiningStormProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_storm_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LightiningStorm",
+      "type": "rangeditem",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_storm"
     }
   ],
   "variable_elements": [
@@ -1309,24 +1465,27 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.usingtags.its_a_trap": "Its A Trap",
       "item.usingtags.i_ma_mob_spawn_egg": "I Ma Mob Spawn Egg",
       "item.usingtags.big_hammer": "Big Hammer",
-      "item.usingtags.zombie_mob_mob_spawn_egg": "Zombie Mob Mob Spawn Egg",
+      "item.usingtags.pie_day_food": "Pie Day Food",
       "block.usingtags.stage_1": "Stage 0",
-      "item.usingtags.crop_seeds": "Crop Seeds",
       "block.usingtags.stage_0": "Stage 0",
-      "block.usingtags.place_and_check": "Place And Check",
       "block.usingtags.rainbow_party": "Rainbow Party",
       "key.usingtags.portal_blue": "Portal Blue",
       "item.usingtags.power_up_sword": "Power Up Sword",
       "entity.usingtags.i_ma_mob": "I Ma Mob",
+      "item.usingtags.portal_placer": "Portal Placer",
+      "block.usingtags.pie_day_block": "Pie Day Block",
+      "key.usingtags.portal_orange": "Portal Orange",
+      "item.usingtags.lightining_storm": "Lightining Storm",
+      "block.usingtags.breaking_block": "Place And Check",
+      "block.usingtags.its_a_trap": "Its A Trap",
+      "item.usingtags.zombie_mob_mob_spawn_egg": "Zombie Mob Mob Spawn Egg",
+      "item.usingtags.crop_seeds": "Crop Seeds",
+      "block.usingtags.place_and_check": "Place And Check",
       "key.usingtags.check_camera": "Check Camera",
       "block.usingtags.camera_block": "Camera Block",
-      "item.usingtags.portal_placer": "Portal Placer",
-      "key.usingtags.portal_orange": "Portal Orange",
       "entity.usingtags.zombie_mob_mob": "Zombie Mob Mob",
-      "block.usingtags.breaking_block": "Place And Check",
       "block.usingtags.portal_2": "Portal 1",
       "block.usingtags.portal_1": "Portal 1",
       "item.usingtags.pocket_bridge": "Pocket Bridge"
