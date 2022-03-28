@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:magma_block"
+    },
+    "2": {
+      "item": "minecraft:magma_block"
+    },
+    "3": {
+      "item": "minecraft:magma_block"
+    },
+    "5": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "item": "usingtags:reflect_armor_boots",
+    "count": 1
+  }
+}

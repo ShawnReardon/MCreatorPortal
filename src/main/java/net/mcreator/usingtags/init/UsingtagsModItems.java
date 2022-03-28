@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.usingtags.item.ReflectorShieldItem;
+import net.mcreator.usingtags.item.ReflectArmorItem;
 import net.mcreator.usingtags.item.PowerUpSwordItem;
 import net.mcreator.usingtags.item.PortalPlacerItem;
 import net.mcreator.usingtags.item.PocketBridgeItem;
@@ -51,6 +53,11 @@ public class UsingtagsModItems {
 	public static final Item PIE_DAY_BLOCK = register(UsingtagsModBlocks.PIE_DAY_BLOCK, CreativeModeTab.TAB_MISC);
 	public static final Item PIE_DAY_FOOD = register(new PieDayFoodItem());
 	public static final Item LIGHTINING_STORM = register(new LightiningStormItem());
+	public static final Item REFLECT_ARMOR_HELMET = register(new ReflectArmorItem.Helmet());
+	public static final Item REFLECT_ARMOR_CHESTPLATE = register(new ReflectArmorItem.Chestplate());
+	public static final Item REFLECT_ARMOR_LEGGINGS = register(new ReflectArmorItem.Leggings());
+	public static final Item REFLECT_ARMOR_BOOTS = register(new ReflectArmorItem.Boots());
+	public static final Item REFLECTOR_SHIELD = register(new ReflectorShieldItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -1,6 +1,8 @@
 {
   "item.usingtags.i_ma_mob_spawn_egg": "I Ma Mob Spawn Egg",
   "item.usingtags.big_hammer": "Big Hammer",
+  "item.usingtags.reflector_shield": "Reflector Shield",
+  "item.usingtags.reflect_armor_chestplate": "Reflect Chestplate",
   "item.usingtags.pie_day_food": "Pie Day Food",
   "block.usingtags.stage_1": "Stage 0",
   "block.usingtags.stage_0": "Stage 0",
@@ -10,6 +12,7 @@
   "entity.usingtags.i_ma_mob": "I Ma Mob",
   "item.usingtags.portal_placer": "Portal Placer",
   "block.usingtags.pie_day_block": "Pie Day Block",
+  "item.usingtags.reflect_armor_leggings": "Reflect Leggings",
   "key.usingtags.portal_orange": "Portal Orange",
   "item.usingtags.lightining_storm": "Lightining Storm",
   "block.usingtags.breaking_block": "Place And Check",
@@ -17,10 +20,12 @@
   "item.usingtags.zombie_mob_mob_spawn_egg": "Zombie Mob Mob Spawn Egg",
   "item.usingtags.crop_seeds": "Crop Seeds",
   "block.usingtags.place_and_check": "Place And Check",
+  "item.usingtags.reflect_armor_helmet": "Reflect Helmet",
   "key.usingtags.check_camera": "Check Camera",
   "block.usingtags.camera_block": "Camera Block",
   "entity.usingtags.zombie_mob_mob": "Zombie Mob Mob",
   "block.usingtags.portal_2": "Portal 1",
   "block.usingtags.portal_1": "Portal 1",
-  "item.usingtags.pocket_bridge": "Pocket Bridge"
+  "item.usingtags.pocket_bridge": "Pocket Bridge",
+  "item.usingtags.reflect_armor_boots": "Reflect Boots"
 }

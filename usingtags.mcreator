@@ -608,7 +608,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Portal"
     },
     {
       "name": "Portal1",
@@ -616,7 +617,8 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_1"
+      "registry_name": "portal_1",
+      "path": "~/Portal"
     },
     {
       "name": "PortalPlacer",
@@ -624,7 +626,8 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_placer"
+      "registry_name": "portal_placer",
+      "path": "~/Portal"
     },
     {
       "name": "PortalBlueOnKeyPressed",
@@ -644,7 +647,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Portal"
     },
     {
       "name": "PortalBlue",
@@ -652,7 +656,8 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_blue"
+      "registry_name": "portal_blue",
+      "path": "~/Portal"
     },
     {
       "name": "PortalOrangeOnKeyPressed",
@@ -672,7 +677,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Portal"
     },
     {
       "name": "Portal2",
@@ -680,7 +686,8 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_2"
+      "registry_name": "portal_2",
+      "path": "~/Portal"
     },
     {
       "name": "Portal2EntityCollide",
@@ -700,7 +707,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Portal"
     },
     {
       "name": "PortalOrange",
@@ -708,7 +716,8 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_orange"
+      "registry_name": "portal_orange",
+      "path": "~/Portal"
     },
     {
       "name": "CameraBlockTag",
@@ -1332,6 +1341,188 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightining_storm"
+    },
+    {
+      "name": "ReflectArmor",
+      "type": "armor",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "ReflectArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor_helmet_recipe"
+    },
+    {
+      "name": "ReflectArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor_body_recipe"
+    },
+    {
+      "name": "ReflectArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor_leggings_recipe"
+    },
+    {
+      "name": "ReflectArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor_boots_recipe"
+    },
+    {
+      "name": "ReflectArmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReflectArmorBootsTickEvent",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReflectArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_armor_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReflectiveArmorExplosiveLeggings",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflective_armor_explosive_leggings",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReflectorShield",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflector_shield"
+    },
+    {
+      "name": "ReflectShield",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_shield",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1467,6 +1658,8 @@
     "en_us": {
       "item.usingtags.i_ma_mob_spawn_egg": "I Ma Mob Spawn Egg",
       "item.usingtags.big_hammer": "Big Hammer",
+      "item.usingtags.reflector_shield": "Reflector Shield",
+      "item.usingtags.reflect_armor_chestplate": "Reflect Chestplate",
       "item.usingtags.pie_day_food": "Pie Day Food",
       "block.usingtags.stage_1": "Stage 0",
       "block.usingtags.stage_0": "Stage 0",
@@ -1476,6 +1669,7 @@
       "entity.usingtags.i_ma_mob": "I Ma Mob",
       "item.usingtags.portal_placer": "Portal Placer",
       "block.usingtags.pie_day_block": "Pie Day Block",
+      "item.usingtags.reflect_armor_leggings": "Reflect Leggings",
       "key.usingtags.portal_orange": "Portal Orange",
       "item.usingtags.lightining_storm": "Lightining Storm",
       "block.usingtags.breaking_block": "Place And Check",
@@ -1483,12 +1677,14 @@
       "item.usingtags.zombie_mob_mob_spawn_egg": "Zombie Mob Mob Spawn Egg",
       "item.usingtags.crop_seeds": "Crop Seeds",
       "block.usingtags.place_and_check": "Place And Check",
+      "item.usingtags.reflect_armor_helmet": "Reflect Helmet",
       "key.usingtags.check_camera": "Check Camera",
       "block.usingtags.camera_block": "Camera Block",
       "entity.usingtags.zombie_mob_mob": "Zombie Mob Mob",
       "block.usingtags.portal_2": "Portal 1",
       "block.usingtags.portal_1": "Portal 1",
-      "item.usingtags.pocket_bridge": "Pocket Bridge"
+      "item.usingtags.pocket_bridge": "Pocket Bridge",
+      "item.usingtags.reflect_armor_boots": "Reflect Boots"
     }
   },
   "foldersRoot": {
