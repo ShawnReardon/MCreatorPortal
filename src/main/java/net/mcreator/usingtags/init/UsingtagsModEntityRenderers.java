@@ -21,5 +21,6 @@ public class UsingtagsModEntityRenderers {
 		event.registerEntityRenderer(UsingtagsModEntities.I_MA_MOB, IMaMobRenderer::new);
 		event.registerEntityRenderer(UsingtagsModEntities.ZOMBIE_MOB_MOB, ZombieMobMobRenderer::new);
 		event.registerEntityRenderer(UsingtagsModEntities.LIGHTINING_STORM, ThrownItemRenderer::new);
+		event.registerEntityRenderer(UsingtagsModEntities.ENRICH_DEVICE, ThrownItemRenderer::new);
 	}
 }

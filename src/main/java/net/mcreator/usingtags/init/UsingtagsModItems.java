@@ -21,6 +21,8 @@ import net.mcreator.usingtags.item.PortalPlacerItem;
 import net.mcreator.usingtags.item.PocketBridgeItem;
 import net.mcreator.usingtags.item.PieDayFoodItem;
 import net.mcreator.usingtags.item.LightiningStormItem;
+import net.mcreator.usingtags.item.EnrichDeviceItem;
+import net.mcreator.usingtags.item.EnrichAmmoItem;
 import net.mcreator.usingtags.item.CropSeedsItem;
 import net.mcreator.usingtags.item.BigHammerItem;
 
@@ -58,6 +60,8 @@ public class UsingtagsModItems {
 	public static final Item REFLECT_ARMOR_LEGGINGS = register(new ReflectArmorItem.Leggings());
 	public static final Item REFLECT_ARMOR_BOOTS = register(new ReflectArmorItem.Boots());
 	public static final Item REFLECTOR_SHIELD = register(new ReflectorShieldItem());
+	public static final Item ENRICH_AMMO = register(new EnrichAmmoItem());
+	public static final Item ENRICH_DEVICE = register(new EnrichDeviceItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
