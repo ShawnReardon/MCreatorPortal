@@ -62,6 +62,7 @@ public class UsingtagsModItems {
 	public static final Item REFLECTOR_SHIELD = register(new ReflectorShieldItem());
 	public static final Item ENRICH_AMMO = register(new EnrichAmmoItem());
 	public static final Item ENRICH_DEVICE = register(new EnrichDeviceItem());
+	public static final Item SUPRISE_LOOT_BLOCK = register(UsingtagsModBlocks.SUPRISE_LOOT_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

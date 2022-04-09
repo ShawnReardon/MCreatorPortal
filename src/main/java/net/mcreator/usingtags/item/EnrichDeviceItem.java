@@ -59,7 +59,7 @@ public class EnrichDeviceItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					EnrichDeviceEntity entityarrow = EnrichDeviceEntity.shoot(world, entity, world.getRandom(), 1f, 0, 5);
+					EnrichDeviceEntity entityarrow = EnrichDeviceEntity.shoot(world, entity, world.getRandom(), 0.5f, 0, 5);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

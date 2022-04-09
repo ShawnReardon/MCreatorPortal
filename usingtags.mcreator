@@ -1585,16 +1585,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -1612,6 +1604,117 @@
       "locked_code": false,
       "registry_name": "enrich_device",
       "path": "~/EnrichDevice"
+    },
+    {
+      "name": "GetBlockAtLookLocation",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_block_at_look_location",
+      "metadata": {
+        "return_type": "blockstate",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EnrichDevice"
+    },
+    {
+      "name": "SupriseLootBlock",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suprise_loot_block",
+      "path": "~/LootTable"
+    },
+    {
+      "name": "SupriseLootBlockTable",
+      "type": "loottable",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suprise_loot_block_table",
+      "path": "~/LootTable"
+    },
+    {
+      "name": "IngotSuprise",
+      "type": "enchantment",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ingot_suprise",
+      "path": "~/LootTable"
+    },
+    {
+      "name": "SupriseIngotProcedure",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suprise_ingot_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LootTable"
+    },
+    {
+      "name": "SupriseLootBlockBlockAdded",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suprise_loot_block_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LootTable"
     }
   ],
   "variable_elements": [
@@ -1772,9 +1875,11 @@
       "key.usingtags.check_camera": "Check Camera",
       "block.usingtags.camera_block": "Camera Block",
       "entity.usingtags.zombie_mob_mob": "Zombie Mob Mob",
+      "block.usingtags.suprise_loot_block": "Suprise Loot Block",
       "block.usingtags.portal_2": "Portal 1",
       "block.usingtags.portal_1": "Portal 1",
       "item.usingtags.pocket_bridge": "Pocket Bridge",
+      "enchantment.usingtags.ingot_suprise": "Ingot Suprise",
       "item.usingtags.reflect_armor_boots": "Reflect Boots"
     }
   },
@@ -1787,6 +1892,10 @@
       },
       {
         "name": "EnrichDevice",
+        "children": []
+      },
+      {
+        "name": "LootTable",
         "children": []
       }
     ]

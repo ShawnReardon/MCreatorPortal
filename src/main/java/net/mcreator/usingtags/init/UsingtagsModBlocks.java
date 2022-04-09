@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.usingtags.block.SupriseLootBlockBlock;
 import net.mcreator.usingtags.block.Stage1Block;
 import net.mcreator.usingtags.block.Stage0Block;
 import net.mcreator.usingtags.block.RainbowPartyBlock;
@@ -39,6 +40,7 @@ public class UsingtagsModBlocks {
 	public static final Block CAMERA_BLOCK = register(new CameraBlockBlock());
 	public static final Block RAINBOW_PARTY = register(new RainbowPartyBlock());
 	public static final Block PIE_DAY_BLOCK = register(new PieDayBlockBlock());
+	public static final Block SUPRISE_LOOT_BLOCK = register(new SupriseLootBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -61,6 +63,7 @@ public class UsingtagsModBlocks {
 			Portal2Block.registerRenderLayer();
 			CameraBlockBlock.registerRenderLayer();
 			PieDayBlockBlock.registerRenderLayer();
+			SupriseLootBlockBlock.registerRenderLayer();
 		}
 	}
 }

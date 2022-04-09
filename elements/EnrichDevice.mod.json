@@ -23,7 +23,7 @@
     "animation": "none",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 1.0,
+    "bulletPower": 0.5,
     "bulletDamage": 0.0,
     "bulletKnockback": 5,
     "bulletParticles": false,

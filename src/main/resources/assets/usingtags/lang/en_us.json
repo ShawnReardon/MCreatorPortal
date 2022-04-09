@@ -26,8 +26,10 @@
   "key.usingtags.check_camera": "Check Camera",
   "block.usingtags.camera_block": "Camera Block",
   "entity.usingtags.zombie_mob_mob": "Zombie Mob Mob",
+  "block.usingtags.suprise_loot_block": "Suprise Loot Block",
   "block.usingtags.portal_2": "Portal 1",
   "block.usingtags.portal_1": "Portal 1",
   "item.usingtags.pocket_bridge": "Pocket Bridge",
+  "enchantment.usingtags.ingot_suprise": "Ingot Suprise",
   "item.usingtags.reflect_armor_boots": "Reflect Boots"
 }

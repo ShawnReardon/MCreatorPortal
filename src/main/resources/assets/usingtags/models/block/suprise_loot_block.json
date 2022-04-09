@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usingtags:blocks/transparent",
+    "up": "usingtags:blocks/transparent",
+    "north": "usingtags:blocks/transparent",
+    "east": "usingtags:blocks/transparent",
+    "south": "usingtags:blocks/transparent",
+    "west": "usingtags:blocks/transparent",
+    "particle": "usingtags:blocks/transparent"
+  }
+}
