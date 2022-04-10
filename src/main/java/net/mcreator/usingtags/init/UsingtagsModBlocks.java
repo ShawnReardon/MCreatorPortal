@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.usingtags.block.ThornBushBlock;
 import net.mcreator.usingtags.block.SupriseLootBlockBlock;
 import net.mcreator.usingtags.block.Stage1Block;
 import net.mcreator.usingtags.block.Stage0Block;
@@ -23,6 +24,7 @@ import net.mcreator.usingtags.block.PieDayBlockBlock;
 import net.mcreator.usingtags.block.ItsATrapBlock;
 import net.mcreator.usingtags.block.CameraBlockBlock;
 import net.mcreator.usingtags.block.BreakingBlockBlock;
+import net.mcreator.usingtags.block.BlazeBushBlock;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -41,6 +43,8 @@ public class UsingtagsModBlocks {
 	public static final Block RAINBOW_PARTY = register(new RainbowPartyBlock());
 	public static final Block PIE_DAY_BLOCK = register(new PieDayBlockBlock());
 	public static final Block SUPRISE_LOOT_BLOCK = register(new SupriseLootBlockBlock());
+	public static final Block THORN_BUSH = register(new ThornBushBlock());
+	public static final Block BLAZE_BUSH = register(new BlazeBushBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -64,6 +68,8 @@ public class UsingtagsModBlocks {
 			CameraBlockBlock.registerRenderLayer();
 			PieDayBlockBlock.registerRenderLayer();
 			SupriseLootBlockBlock.registerRenderLayer();
+			ThornBushBlock.registerRenderLayer();
+			BlazeBushBlock.registerRenderLayer();
 		}
 	}
 }

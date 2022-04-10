@@ -1715,6 +1715,240 @@
         ]
       },
       "path": "~/LootTable"
+    },
+    {
+      "name": "ThornBushMobplayerCollidesWithPlant",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thorn_bush_mobplayer_collides_with_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Plants"
+    },
+    {
+      "name": "ThornBush",
+      "type": "plant",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thorn_bush",
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushUpdateTick",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushMobplayerCollidesWithPlant",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_mobplayer_collides_with_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBush",
+      "type": "plant",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush",
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushEntity",
+      "type": "livingentity",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_entity",
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushPlantDestroyed",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_plant_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushPlantAdded",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_plant_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushEntityParticleSpawningCondition",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_entity_particle_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_entity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushRangedBullet",
+      "type": "item",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_ranged_bullet",
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushRangedItem",
+      "type": "rangeditem",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_ranged_item",
+      "path": "~/Plants"
+    },
+    {
+      "name": "BlazeBushRangedItemProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_ranged_item_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Plants"
     }
   ],
   "variable_elements": [
@@ -1859,6 +2093,7 @@
       "block.usingtags.rainbow_party": "Rainbow Party",
       "key.usingtags.portal_blue": "Portal Blue",
       "item.usingtags.power_up_sword": "Power Up Sword",
+      "entity.usingtags.blaze_bush_entity": "Blaze Bush Entity",
       "entity.usingtags.i_ma_mob": "I Ma Mob",
       "item.usingtags.portal_placer": "Portal Placer",
       "block.usingtags.pie_day_block": "Pie Day Block",
@@ -1867,9 +2102,14 @@
       "item.usingtags.lightining_storm": "Lightining Storm",
       "block.usingtags.breaking_block": "Place And Check",
       "item.usingtags.enrich_device": "Enrich Device",
+      "block.usingtags.blaze_bush": "Blaze Bush",
       "block.usingtags.its_a_trap": "Its A Trap",
+      "item.usingtags.blaze_bush_ranged_bullet": "Blaze Bush Ranged Bullet",
+      "block.usingtags.thorn_bush": "Thorn Bush",
       "item.usingtags.zombie_mob_mob_spawn_egg": "Zombie Mob Mob Spawn Egg",
+      "item.usingtags.blaze_bush_entity_spawn_egg": "Blaze Bush Entity Spawn Egg",
       "item.usingtags.crop_seeds": "Crop Seeds",
+      "item.usingtags.blaze_bush_ranged_item": "Blaze Bush Ranged Item",
       "block.usingtags.place_and_check": "Place And Check",
       "item.usingtags.reflect_armor_helmet": "Reflect Helmet",
       "key.usingtags.check_camera": "Check Camera",
@@ -1896,6 +2136,10 @@
       },
       {
         "name": "LootTable",
+        "children": []
+      },
+      {
+        "name": "Plants",
         "children": []
       }
     ]

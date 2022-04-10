@@ -18,6 +18,8 @@ import net.mcreator.usingtags.entity.ZombieMobMobEntity;
 import net.mcreator.usingtags.entity.LightiningStormEntity;
 import net.mcreator.usingtags.entity.IMaMobEntity;
 import net.mcreator.usingtags.entity.EnrichDeviceEntity;
+import net.mcreator.usingtags.entity.BlazeBushRangedItemEntity;
+import net.mcreator.usingtags.entity.BlazeBushEntityEntity;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -38,6 +40,13 @@ public class UsingtagsModEntities {
 	public static final EntityType<EnrichDeviceEntity> ENRICH_DEVICE = register("entitybulletenrich_device",
 			EntityType.Builder.<EnrichDeviceEntity>of(EnrichDeviceEntity::new, MobCategory.MISC).setCustomClientFactory(EnrichDeviceEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<BlazeBushEntityEntity> BLAZE_BUSH_ENTITY = register("blaze_bush_entity",
+			EntityType.Builder.<BlazeBushEntityEntity>of(BlazeBushEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlazeBushEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final EntityType<BlazeBushRangedItemEntity> BLAZE_BUSH_RANGED_ITEM = register("entitybulletblaze_bush_ranged_item",
+			EntityType.Builder.<BlazeBushRangedItemEntity>of(BlazeBushRangedItemEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(BlazeBushRangedItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -55,6 +64,7 @@ public class UsingtagsModEntities {
 		event.enqueueWork(() -> {
 			IMaMobEntity.init();
 			ZombieMobMobEntity.init();
+			BlazeBushEntityEntity.init();
 		});
 	}
 
@@ -62,5 +72,6 @@ public class UsingtagsModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(I_MA_MOB, IMaMobEntity.createAttributes().build());
 		event.put(ZOMBIE_MOB_MOB, ZombieMobMobEntity.createAttributes().build());
+		event.put(BLAZE_BUSH_ENTITY, BlazeBushEntityEntity.createAttributes().build());
 	}
 }

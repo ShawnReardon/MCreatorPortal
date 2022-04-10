@@ -24,6 +24,8 @@ import net.mcreator.usingtags.item.LightiningStormItem;
 import net.mcreator.usingtags.item.EnrichDeviceItem;
 import net.mcreator.usingtags.item.EnrichAmmoItem;
 import net.mcreator.usingtags.item.CropSeedsItem;
+import net.mcreator.usingtags.item.BlazeBushRangedItemItem;
+import net.mcreator.usingtags.item.BlazeBushRangedBulletItem;
 import net.mcreator.usingtags.item.BigHammerItem;
 
 import java.util.List;
@@ -63,6 +65,13 @@ public class UsingtagsModItems {
 	public static final Item ENRICH_AMMO = register(new EnrichAmmoItem());
 	public static final Item ENRICH_DEVICE = register(new EnrichDeviceItem());
 	public static final Item SUPRISE_LOOT_BLOCK = register(UsingtagsModBlocks.SUPRISE_LOOT_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item THORN_BUSH = register(UsingtagsModBlocks.THORN_BUSH, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BLAZE_BUSH = register(UsingtagsModBlocks.BLAZE_BUSH, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BLAZE_BUSH_ENTITY = register(
+			new SpawnEggItem(UsingtagsModEntities.BLAZE_BUSH_ENTITY, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("blaze_bush_entity_spawn_egg"));
+	public static final Item BLAZE_BUSH_RANGED_BULLET = register(new BlazeBushRangedBulletItem());
+	public static final Item BLAZE_BUSH_RANGED_ITEM = register(new BlazeBushRangedItemItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

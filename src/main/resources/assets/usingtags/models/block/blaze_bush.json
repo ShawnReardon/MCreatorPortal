@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "usingtags:blocks/blazebush1",
+    "particle": "usingtags:blocks/blazebush1"
+  }
+}

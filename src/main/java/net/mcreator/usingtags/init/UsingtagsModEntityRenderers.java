@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.usingtags.client.renderer.ZombieMobMobRenderer;
 import net.mcreator.usingtags.client.renderer.IMaMobRenderer;
+import net.mcreator.usingtags.client.renderer.BlazeBushEntityRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class UsingtagsModEntityRenderers {
@@ -22,5 +23,7 @@ public class UsingtagsModEntityRenderers {
 		event.registerEntityRenderer(UsingtagsModEntities.ZOMBIE_MOB_MOB, ZombieMobMobRenderer::new);
 		event.registerEntityRenderer(UsingtagsModEntities.LIGHTINING_STORM, ThrownItemRenderer::new);
 		event.registerEntityRenderer(UsingtagsModEntities.ENRICH_DEVICE, ThrownItemRenderer::new);
+		event.registerEntityRenderer(UsingtagsModEntities.BLAZE_BUSH_ENTITY, BlazeBushEntityRenderer::new);
+		event.registerEntityRenderer(UsingtagsModEntities.BLAZE_BUSH_RANGED_ITEM, ThrownItemRenderer::new);
 	}
 }
