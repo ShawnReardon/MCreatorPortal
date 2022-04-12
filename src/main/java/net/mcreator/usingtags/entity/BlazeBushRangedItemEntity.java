@@ -122,8 +122,8 @@ public class BlazeBushRangedItemEntity extends AbstractArrow implements ItemSupp
 		double d3 = target.getZ() - entity.getZ();
 		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(1);
-		entityarrow.setKnockback(5);
+		entityarrow.setBaseDamage(0.1);
+		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(false);
 		entityarrow.setSecondsOnFire(100);
 		entity.level.addFreshEntity(entityarrow);

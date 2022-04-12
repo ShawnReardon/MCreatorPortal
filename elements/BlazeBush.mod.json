@@ -83,7 +83,7 @@
       "Surface"
     ],
     "restrictionBiomes": [],
-    "patchSize": 64,
+    "patchSize": 3,
     "onBlockAdded": {
       "name": "BlazeBushPlantAdded"
     },

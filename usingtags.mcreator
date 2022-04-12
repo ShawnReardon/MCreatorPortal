@@ -1949,6 +1949,76 @@
         ]
       },
       "path": "~/Plants"
+    },
+    {
+      "name": "FireMultipleArrows",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_multiple_arrows",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlazeBushLootTable",
+      "type": "loottable",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_bush_loot_table",
+      "path": "~/Plants"
+    },
+    {
+      "name": "CommandIngtoSuprise",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_ingto_suprise",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LootTable"
     }
   ],
   "variable_elements": [
@@ -2082,9 +2152,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.usingtags.i_ma_mob_spawn_egg": "I Ma Mob Spawn Egg",
-      "item.usingtags.big_hammer": "Big Hammer",
       "item.usingtags.reflector_shield": "Reflector Shield",
+      "item.usingtags.big_hammer": "Big Hammer",
+      "item.usingtags.i_ma_mob_spawn_egg": "I Ma Mob Spawn Egg",
       "item.usingtags.reflect_armor_chestplate": "Reflect Chestplate",
       "item.usingtags.pie_day_food": "Pie Day Food",
       "block.usingtags.stage_1": "Stage 0",

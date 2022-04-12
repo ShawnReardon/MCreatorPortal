@@ -24,7 +24,7 @@ public class BlazeBushFeature extends DefaultFlowerFeature {
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
 			.configured(
 					new RandomPatchConfiguration.GrassConfigurationBuilder(new SimpleStateProvider(UsingtagsModBlocks.BLAZE_BUSH.defaultBlockState()),
-							SimpleBlockPlacer.INSTANCE).tries(64)
+							SimpleBlockPlacer.INSTANCE).tries(3)
 
 									.build())
 			.decorated(FeatureDecorator.HEIGHTMAP.configured(new HeightmapConfiguration(Heightmap.Types.MOTION_BLOCKING))).squared().rarity(32)
